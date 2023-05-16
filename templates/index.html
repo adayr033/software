@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Empresa de software</title>
+        <link rel="stylesheet" type="text/css" href="static/styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">TOPS-SOFTWARE</a>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="registro.html">registro</a></li>
+                <li><a href="software.html">software</a></li>
+                <li><a href="Contactanos.html">Contantanos</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="static/img/stars.png" id="nebula1">
+            <img src="static/img/moon.png" id="leon">
+            <img src="static/img/mountains_behind.png" id="nebula2">
+            <h2 id="text">pide software</h2>
+            <a href="#sec" id="btn">Explora</a>
+            <img src="static/img/mountains_front.png" id="nebula3">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Lo que ofrecemos</h2>
+            <p>
+                nos dedicamos a proporcionar software personalizado
+                para todo tipo de usuarios<br>
+                
+                no importa que sea tipo de empresa manejes
+                no sotros de brindamos una solucion.<br>
+                
+                contamos con las herramientas necesarias para
+                desarrollar el protecyo que tengas pensado.<br>
+
+                dvldsmvldmlvmdlvndlnvldnvldnlvndlvndlnvldnvldnvlndvlndv<br>
+                dvndlvnldnvldnvldnvldnvlndlvndlvndlnvd<br>
+                ghghfhfhfhfhfhf<br>
+                fjghfhfhfhfhfjgjgj<br>
+                gjejdhebjbrfbrckrkbrbvjbrkvbrkbv<br>
+                bjbxjebjxbejbxjdbxjebj<br>
+                jkbjgyyfydydhh<br>
+                hhhhhrhhhrhrhrhrh<br>
+                jvjvhvjvjvjvjvjvjvjvjvjvjvjvjvjvjv
+                vjvjvjvjvjvjj<br>
+                vjvjgjhgjfhvjvjvjvjvjvj
+                bjbkgjvjfthgvhfhvh<br>
+                ffhftyhfvjgigj<br>
+                bbbebbcebcebcebcbebebc<br> </p>
+        </div>
+
+        <script>
+            let nebula1 = document.getElementById('nebula1');
+            let leon = document.getElementById('leon');
+            let nebula2 = document.getElementById('nebula2');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let nebula3 = document.getElementById('nebula3');
+            let header = document.querySelector('header');
+            
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                nebula1.style.left = value * 0.25 + 'px';
+                leon.style.top = value * 1.05 + 'px';
+                nebula2.style.top = value * 0.5 + 'px';
+                nebula3.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.Top = value *0.5 + 'px';
+            })
+            
+        </script>
+
+    </body>
+
+</html>
